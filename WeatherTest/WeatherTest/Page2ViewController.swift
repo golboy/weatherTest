@@ -19,7 +19,7 @@ class Page2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.title = "Forecast: \(self.city)"
         
         self.dataList = WeatherApi().getForecast(city: self.city, units: self.unit)
-        print("data \(dataList?.list.count ?? 0)")
+        //print("data \(dataList?.list.count ?? 0)")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
